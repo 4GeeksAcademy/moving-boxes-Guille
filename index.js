@@ -15,6 +15,8 @@ let isMoving = false;
 
 const moveBox = (event) => {
   const box = document.getElementById(event.target.id);
+  box.style.position = 'absolute';
+
   isMoving = true;
   onmousemove = (e) => {
     if (!isMoving) return;
